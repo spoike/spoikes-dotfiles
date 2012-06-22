@@ -3,7 +3,7 @@
 ## Installation
 
 Use [homesick](https://github.com/technicalpickles/homesick) to 
-install the dotfiles.
+symlink the dotfiles.
 
     # Installs the homesick ruby gem
     gem install homesick
@@ -15,3 +15,7 @@ install the dotfiles.
     homesick symlink dotfiles
 
     # DONE!
+
+Otherwise you have to symlink them manually like [this](http://superuser.com/questions/302312/how-to-properly-store-dotfiles-in-a-centralized-git-repository):
+
+    $ ln -s ~/dotfiles/bashrc ~/.bashrc
