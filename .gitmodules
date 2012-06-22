@@ -1,0 +1,3 @@
+[submodule "home/.bash"]
+	path = home/.bash
+	url = https://github.com/spoike/git-aware-prompt
