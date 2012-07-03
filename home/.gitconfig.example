@@ -1,0 +1,19 @@
+[alias]
+        amend = commit --amend -C HEAD
+        st = status
+        co = checkout
+        ci = commit
+        br = branch
+        df = diff
+        ff = !git co master && git merge work && git co work
+        ffpush = !git ff && git push
+        ffb = !sh -c 'git co master && git merge "$1" && git checkout "$1"' -
+        ffbpush = !sh -c 'git ffb "$1" && git push' -
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset$
+        who = shortlog -s --
+        blg = log -p
+[color]
+        branch = auto
+        diff = auto
+        interactive = auto
+        status = auto
